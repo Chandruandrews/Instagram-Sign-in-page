@@ -1,7 +1,7 @@
 import { useState ,useContext} from "react";
 import React from "react";
 import "./insta.css";
-import { Link, TextField } from "@mui/material";
+import { Button, Link, TextField } from "@mui/material";
 import { UserContext  } from "./userContext";
 import {useNavigate}from "react-router-dom"
 
@@ -20,7 +20,7 @@ function Instagram() {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: "" }); // clear error on input
+    setErrors({ ...errors, [e.target.name]: "" }); 
   };
 
   const validate = () => {
@@ -63,6 +63,9 @@ function Instagram() {
       navigate("/users"); 
     }
   };
+  const handleClick=()=>{
+    navigate("/users"); 
+  }
 
   return (
     <div className="container">
@@ -130,7 +133,7 @@ function Instagram() {
           Have an account? <a href="#">Log in</a>
         </p>
       </div>
-      <Link to="/userTable">Go to table</Link>
+      <Button onClick={handleClick}>Go to table</Button>
     </div>
   );
 }

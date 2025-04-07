@@ -10,7 +10,7 @@ function App() {
             <Router>
                 <Routes>
                     <Route path="/" element={<Instagram />} />
-                    <Route path="/Users" element={<UserTable />} />
+                    <Route path="/users" element={<UserTable />} />
                 </Routes>
             </Router>
         </UserProvider>

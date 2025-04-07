@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { Link } from "react-router-dom";
 
 export const UserContext = createContext();
 
@@ -13,4 +14,5 @@ const addUser = (userData) => {
             {children}
         </UserContext.Provider>
     );
+    <Link to="/userTable">Go to table</Link>
 };
