@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  body {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 350px;
+    width: 100%;
+  }
+  
+  .form-box {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 2.5rem;
+    color: #262626;
+    margin-bottom: 10px;
+  }
+  
+  .sub-text {
+    font-size: 14px;
+    color: #8e8e8e;
+    margin-bottom: 20px;
+  }
+  
+  .form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #0095f6;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .terms {
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-top: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0095f6;
+  }
+  
